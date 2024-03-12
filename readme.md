@@ -24,4 +24,46 @@ mysql
     <button>login</button>
     
  ```
+   # NavBar
+   demonstration of navigation bar
+   ```html
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+        ul{
+            background-color: black;
+            border-radius: 8px;
+            display: flex;
+            margin: 0;
+
+        }
+        li{
+            margin-left: 23px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
+   ```
+   # selectors
+   demonstration of Selectors in css
+   
+
     
