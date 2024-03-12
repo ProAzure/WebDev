@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Implentaion</title>
+    <style>
+        body{
+            background-color: #212121;
+        }
+        .parent{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display:flex;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            margin-top: 86px;
+            margin-left:89px;
+            animation:changeColor 5s infinite;
+        }
+        
+    @keyframes changeColor{
+        /* frames per second*/
+        10%{
+            background-color: red;
+        }
+        100%{
+            background-color: white;
+        }
+        30%{
+            background-color: blue;
+        }
+
+    }
+@media screen and (max-width:200px) {
+    body{
+        background-color: white;
+    }
+}
+/* when you want build a responsive website(responsive:window that changes its appieriance when it is
+ in mobile or in laptop as per the width of device) then you have to use media query*/
+    </style>
+</head>
+<body>
+    <!-- animations 
+    media query -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
