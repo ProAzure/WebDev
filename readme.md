@@ -64,6 +64,3 @@ mysql
    ```
    # selectors
    demonstration of Selectors in css
-   
-
-    
