@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color:blue">
     <form action="">
-        <input type="text" placeholder="username" id="username">
+        <input type="text" name="" id="">
+        <input type="text" class="username" id="username">
         <input type="password" placeholder="password" id="password">
         <button>submit</button>
     </form>
 </body>
 <script>
-    let username=document.getElementById('username');
-    let password=document.getElementById('password')
-    console.log(username)
-    console.log(password)
+    document.getElementById('username' );
+    let inp= document.querySelector('input')
+    console.log(inp.nextElementSibling)
+    console.log(inp.previousElementSibling)
+    console.log(inp.previousSibling)
+    console.log(inp.parentElement) 
+
+    let name="hello ${inp}"
+    name='hello ${inp}'
+    name=`hello ${inp}`
+    console.log(name)
+    document.body.style.backgroundColor="purple"
 </script>
 </html>
