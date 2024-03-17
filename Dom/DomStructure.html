@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Calculator App</h1>
+        <div class="container">
+            <input type="text" placeholder="Enter a Value" id="input"><br>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button><br>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button><br>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button><br>
+        <button>0</button>
+        <button>.</button>
+        <button>*</button><br>
+        <button>/</button>
+        <button>+</button>
+        <button>-</button>
+        <button>=</button>
+        <button>c</button>
+        </div>
+    </center>
+</body>
+<script>
+    let inp=document.querySelector("#input")
+    let btns=document.querySelectorAll("button");
+    let string=""
+    btns.forEach(function(btn){
+        console.log(btn)
+        btn.addEventListener('click',function(e){
+
+            if(e.target.innerText=="="){
+                string=inp.value;
+                inp.value=eval(string)
+            }
+            else if(e.target.innerText=="c"){
+                inp.value=""
+            }
+            else{
+                string=string+e.target.innerText
+                inp.value=string
+            }
+        })
+    })
+
+</script>
+</html>
